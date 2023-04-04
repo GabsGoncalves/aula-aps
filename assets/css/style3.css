@@ -1,0 +1,128 @@
+*{
+    margin: 0 auto;
+}
+
+header,
+nav,
+main,
+footer {
+    width: 100%;
+}
+
+header{
+    height: 70px;
+    background-color: #303030;
+    display: flex;
+    align-items: center;
+}
+
+header h1 {
+    text-align: center;
+    padding: 1.5vh;
+    font-size: 50px;
+    color: #fff;
+    font-family: 'Varela Round', sans-serif;
+}
+
+nav{
+    background-color: #303030;
+    height: 55px;
+}
+
+nav div{
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+nav div a{
+    color: #fff;
+    font-size: 20px;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 15px;
+    font-family: 'Varela Round', sans-serif;
+}
+
+nav div a:hover {
+    background-color: #ededed;
+    box-shadow: 3px 3px 8px #c0c0c0;
+    color: black;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    background-color: antiquewhite;
+    height: 1000px;
+}
+
+main div{
+    width: 500px;
+    height: 400px;
+    margin-top: 5vh;
+    border-radius: 25px;
+    border: solid #000 2px;
+    background-color: rgb(228,239,248);
+}
+
+main div#texto h1{
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    font-family: 'Varela Round', sans-serif;
+}
+
+main div#texto p{
+    margin: 30px;
+    font-size: 25px;
+    font-family: 'Varela Round', sans-serif;
+}
+
+main div#texto2 p {
+    margin: 30px;
+    font-size: 17px;
+    font-family: 'Varela Round', sans-serif;
+}
+
+main div#texto2 p2 {
+    margin: 40px;
+    font-family: 'Varela Round', sans-serif;
+}
+
+main div#texto2 h1{
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Varela Round', sans-serif;
+}
+
+main div#anima{
+    display: flex;
+    align-items: center;
+}
+
+
+main div#anima img {
+    animation-name: anima_caixa;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    border-radius: 25px;
+}
+
+@keyframes anima_caixa {
+    0% {
+        width: 0px;
+        height: 0px;
+    }
+
+    50% {
+        width: 450px;
+        height: 350px;
+    }
+
+    100% {
+        width: 0px;
+        height: 0px;
+    }
+}
